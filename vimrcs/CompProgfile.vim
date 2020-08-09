@@ -1,4 +1,5 @@
-autocmd filetype cpp nnoremap <F9> :w <bar> !clang -ulimit -Wall -Wno-unused-result -std=c++11   -O2   % -o %:r && ./%:r <CR>
+autocmd filetype cpp nnoremap <F9> :w <bar> !g++ -ulimit -Wall -Wno-unused-result -std=c++11   -O2   % -o %:r && ./%:r <CR>
+
 syntax on
 set nu
 set clipboard=unnamedplus
@@ -10,11 +11,8 @@ set softtabstop=2
 set smarttab
 set expandtab
 set smartcase
-
 set t_Co=256
 set background=dark
-colorscheme monokai 
-
 autocmd filetype java nnoremap <F9> :w <bar> !javac % && java -enableassertions %:r <CR>
 autocmd filetype python nnoremap <F9> :w <bar> !python % <CR>
 autocmd filetype perl nnoremap <F9> :w <bar> !perl % <CR>
