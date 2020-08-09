@@ -1,4 +1,5 @@
 #!/bin/sh
+mv vimrc ~/.vim_runtime
 set -e
 
 cd ~/.vim_runtime
