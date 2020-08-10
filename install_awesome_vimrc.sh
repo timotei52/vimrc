@@ -1,6 +1,7 @@
 #!/bin/sh
 set -e
-
+mkdire ~/.vim_runtime/templates
+mv cppteplatefile ~/.vim_runtime/templates/temp.cpp
 cd ~/.vim_runtime
 
 echo 'set runtimepath+=~/.vim_runtime
