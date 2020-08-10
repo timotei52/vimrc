@@ -1,6 +1,6 @@
 #!/bin/sh
 set -e
-mkdire ~/.vim_runtime/templates
+mkdir ~/.vim_runtime/templates
 mv cpptemplatefile ~/.vim_runtime/templates/temp.cpp
 cd ~/.vim_runtime
 
