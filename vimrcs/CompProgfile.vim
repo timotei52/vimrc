@@ -7,6 +7,7 @@ set smarttab
 set expandtab
 set smartcase
 set background=dark
+autocmd BufNewFile  *.cpp 0r ~/.vim/templates/temp.cpp
 autocmd filetype java nnoremap <F9> :w <bar> !javac % && java -enableassertions %:r <CR>
 autocmd filetype python nnoremap <F9> :w <bar> !python % <CR>
 autocmd filetype perl nnoremap <F9> :w <bar> !perl % <CR>
