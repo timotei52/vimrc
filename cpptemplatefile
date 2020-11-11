@@ -60,3 +60,21 @@ typedef long long int int64;
 typedef unsigned long long int  uint64;
 template<typename T, typename U> inline void amin(T &x, U y) { if(y < x) x = y; }
 template<typename T, typename U> inline void amax(T &x, U y) { if(x < y) x = y; }
+int P (int arr[], int beg, int end){  
+    int p = arr[end];
+    int i = (beg - 1);
+  
+    for (int j = beg; j <= end - 1; j++){ 
+        if (arr[j] < p){  
+            i++;
+            swap(arr[i], arr[j]);  
+        } }  
+    swap(arr[i + 1], arr[end]);  
+    return (i + 1);  
+}  
+void quickSort(int arr[], int beg, int end){
+    if (beg < end)  {  
+        int p = P(arr, beg, end);  
+        quickSort(arr, beg, p - 1);  
+        quickSort(arr, p + 1, end);  
+    }}  
